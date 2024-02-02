@@ -106,6 +106,7 @@ li::marker {
     text-decoration: none;
     border-radius: 0.15em;
     box-shadow: inset var(--content-bg) 0px 0px 1px;
+    transition: all 0.2s;
 }
 
 .link-button-accent {
@@ -118,4 +119,9 @@ li::marker {
 
 .link-button-gh {
     background: var(--button-bg-gh);
+}
+
+.link-button:hover {
+    transform: translateY(-0.15em);
+    box-shadow: inset var(--content-bg) 0px 0px 1px, var(--accent) 0px 2px 5px;
 }
