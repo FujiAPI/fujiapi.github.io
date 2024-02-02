@@ -5,9 +5,12 @@ html {
     --content-bg: #221f22;
     --text-main: #fff5ff;
     --text-sub: #ccc2cc;
-    --accent: #d9458b;
-    --accent-b: #ee83b5;
+    --accent: #d445d9;
+    --accent-b: #ee83d7;
     --header-bg: linear-gradient(333deg, var(--accent) 33%, var(--accent-b) 100%);
+    --button-bg-accent: linear-gradient(0deg, var(--accent) 0%, var(--accent-b) 100%);
+    --button-bg-discord: linear-gradient(0deg, #ac75eb 0%, #c7a3f0 100%);
+    --button-bg-gh: linear-gradient(0deg, #222121 0%, #423f3f 100%);
 }
 
 body {
@@ -69,7 +72,8 @@ li::marker {
 
 .content-header {
     padding: 1.2em 0px;
-    background:var(--header-bg)
+    background:var(--header-bg);
+    box-shadow: black 1px 1px 7px;
 }
 
 .content-main {
@@ -83,4 +87,35 @@ li::marker {
 .content-footer>p {
     font-size: 0.85em;
     color: var(--text-sub)
+}
+
+.center-contents {
+    text-align: center;
+}
+
+.fancy-button-container {
+    display: flex;
+    padding: 1.25em 0.55em;
+    justify-content: space-evenly;
+}
+
+.link-button {
+    padding: 0.65em 0.55em;
+    color: var(--text-main);
+    text-shadow: black 1px 1px 1px;
+    text-decoration: none;
+    border-radius: 0.15em;
+    box-shadow: inset var(--content-bg) 0px 0px 1px;
+}
+
+.link-button-accent {
+    background: var(--button-bg-accent);
+}
+
+.link-button-discord {
+    background: var(--button-bg-discord);
+}
+
+.link-button-gh {
+    background: var(--button-bg-gh);
 }
