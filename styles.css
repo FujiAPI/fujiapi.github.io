@@ -4,20 +4,15 @@ html {
     --main-bg: #181618;
     --content-bg: #221f22;
     --text-main: #fff5ff;
+    --text-sub: #ccc2cc;
     --accent: #d9458b;
-    --accent-b: #e76ca5;
+    --accent-b: #ee83b5;
+    --header-bg: linear-gradient(333deg, var(--accent) 33%, var(--accent-b) 100%);
 }
 
 body {
     background-color: var(--main-bg);
     margin: 0px;
-}
-
-.content-body {
-    margin: auto;
-    background-color: var(--content-bg);
-    max-width: 45em;
-    box-shadow: black 0px 0px 4px;
 }
 
 p {
@@ -32,7 +27,27 @@ h1 {
     text-shadow: black 1px 1px 1px;
 }
 
+.content-body {
+    margin: auto;
+    background-color: var(--content-bg);
+    max-width: 45em;
+    box-shadow: black 0px 0px 4px;
+}
+
 .content-header {
     padding: 1.2em 0px;
-    background-color: var(--accent);
+    background:var(--header-bg)
+}
+
+.content-main {
+    margin: 1.5em 0px;
+}
+
+.content-footer {
+    padding-bottom: 0.75em;
+}
+
+.content-footer>p {
+    font-size: 0.85em;
+    color: var(--text-sub)
 }
