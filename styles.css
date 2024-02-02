@@ -1,0 +1,29 @@
+html {
+    font-family: sans-serif;
+
+    --main-bg: rgb(24, 22, 24);
+    --content-bg: rgb(34, 31, 34);
+    --text-main: rgb(255, 245, 255);
+}
+
+body {
+    background-color: var(--main-bg);
+    margin: 0px;
+}
+
+.content-body {
+    margin: auto;
+    background-color: var(--content-bg);
+    max-width: 45em;
+}
+
+p {
+    margin: 0px;
+    color: var(--text-main);
+}
+
+h1 {
+    margin: 0px 0.5em;
+    color: var(--text-main);
+    text-shadow: black 1px 1px 2px;
+}
