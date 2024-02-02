@@ -5,7 +5,7 @@ html {
     --content-bg: #221f22;
     --text-main: #fff5ff;
     --text-sub: #ccc2cc;
-    --accent: #d445d9;
+    --accent: #d259d6;
     --accent-b: #ee83d7;
     --header-bg: linear-gradient(333deg, var(--accent) 33%, var(--accent-b) 100%);
     --button-bg-accent: linear-gradient(0deg, var(--accent) 0%, var(--accent-b) 100%);
