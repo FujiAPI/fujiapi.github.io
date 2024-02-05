@@ -2,11 +2,11 @@ html {
     font-family: sans-serif;
 
     --main-bg: #181618;
-    --content-bg: #221f22;
+    --content-bg: #221f20;
     --text-main: #fff5ff;
     --text-sub: #ccc2cc;
-    --accent: #d259d6;
-    --accent-b: #ee83d7;
+    --accent: #bd5fda;
+    --accent-b: #e581e9;
     --header-bg: linear-gradient(333deg, var(--accent) 33%, var(--accent-b) 100%);
     --button-bg-accent: linear-gradient(0deg, var(--accent) 0%, var(--accent-b) 100%);
     --button-bg-discord: linear-gradient(0deg, #ac75eb 0%, #c7a3f0 100%);
@@ -35,16 +35,17 @@ h1 {
     text-shadow: black 1px 1px 1px;
 }
 
-h3 {
+h2 {
     margin: 0.55em 0.8em;
     color: var(--accent-b);
     text-shadow: black 1px 1px 1px;
     text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-color: var(--text-sub);
+    font-size: larger;
 }
 
-h3::before {
+h2::before {
     content: "➜ ";
     color: var(--text-main);
 }
@@ -57,6 +58,7 @@ ul {
 
 li {
     padding: 0.15em 0.35em;
+    text-shadow: black 1px 1px 1px;
 }
 
 li::marker {
@@ -123,5 +125,5 @@ li::marker {
 
 .link-button:hover {
     transform: translateY(-0.15em);
-    box-shadow: inset var(--content-bg) 0px 0px 1px, var(--accent) 0px 2px 5px;
+    box-shadow: inset var(--content-bg) 0px 0px 1px, var(--text-sub) 0px 2px 5px;
 }
