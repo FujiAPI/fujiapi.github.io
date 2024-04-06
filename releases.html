@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fuji Mod Loader | Featured Mods</title>
+    <link rel="stylesheet" href="./styles.css">
+    <meta property="og:title" content="Fuji Mod Loader | Featured Mods">
+    <meta property="og:description" content="Featured mods - a curated list of the maintainers' favourite mods.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Fuji is a free and open source mod loader for Celeste 64: Fragments of the Mountain developed by the community.">
+
+    <template id="release-listing-templ">
+        <div>
+            <h1 id="ReleaseName"></h1>
+            <hr>
+            <p id="ReleaseDesc"></p>
+            <div id="AssetLinkContainer" class="link-listing"></div>
+            <div class="fancy-button-container">
+                <a class="link-button link-button-accent" target="_blank" id="ViewInfoButton">View on GitHub</a>
+            </div>
+        </div>
+    </template>
+</head>
+
+<body>
+    <div class="content-body">
+        <div class="content-header">
+            <h1>Releases</h1>
+            <p>See recent Fuji releases and download them.</p>
+        </div>
+        <div class="content-main">
+            <p><a href="#" id="show-beta-button">Showing only stable releases. Click here to also show beta
+                    releases.</a></p>
+            <p id="loading-message">Loading...
+                If this doesn't go away soon, GitHub is down, or the script broke. <a
+                    href="https://github.com/fujiapi/fuji/releases">Here's a direct link to the releases.</a> Also, this
+                page requires JavaScript to be enabled.
+            </p>
+            <div id="release-listing"></div>
+        </div>
+    </div>
+    <script src="/js/releases.js" defer></script>
+</body>

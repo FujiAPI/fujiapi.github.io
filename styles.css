@@ -74,7 +74,7 @@ li::marker {
 
 .content-header {
     padding: 1.2em 0px;
-    background:var(--header-bg);
+    background: var(--header-bg);
     box-shadow: black 1px 1px 7px;
 }
 
@@ -126,4 +126,8 @@ li::marker {
 .link-button:hover {
     transform: translateY(-0.15em);
     box-shadow: inset var(--content-bg) 0px 0px 1px, var(--text-sub) 0px 2px 5px;
+}
+
+.link-listing>a {
+    display: block;
 }
