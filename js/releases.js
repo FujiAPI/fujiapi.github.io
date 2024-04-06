@@ -1,12 +1,12 @@
 let ReleasePlatformNameMatches = {
-    "linux-arm64": "Linux ARM 64-bit",
+    "linux-arm64": "Linux ARM64",
     "linux-arm": "Linux ARM",
-    "linux-x64": "Linux",
-    "macos-arm64": "MacOS ARM",
-    "macos-x64": "MacOS",
-    "osx-x64": "MacOS",
-    "windows-x64": "Windows",
-    "win-x64": "Windows",
+    "linux-x64": "Linux x64",
+    "macos-arm64": "MacOS ARM64",
+    "macos-x64": "MacOS x64",
+    "osx-x64": "MacOS x64",
+    "windows-x64": "Windows x64",
+    "win-x64": "Windows x64",
 }
 
 let MarkdownTransformers = [
