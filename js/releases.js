@@ -1,12 +1,12 @@
 let ReleasePlatformNameMatches = {
     "linux-arm64": "Linux ARM 64-bit",
     "linux-arm": "Linux ARM",
-    "linux-x64": "Linux 64-bit",
-    "macos-arm64": "MacOS ARM 64-bit",
-    "macos-x64": "MacOS 64-bit",
-    "osx-x64": "MacOS 64-bit",
-    "windows-x64": "Windows 64-bit",
-    "win-x64": "Windows 64-bit",
+    "linux-x64": "Linux",
+    "macos-arm64": "MacOS ARM",
+    "macos-x64": "MacOS",
+    "osx-x64": "MacOS",
+    "windows-x64": "Windows",
+    "win-x64": "Windows",
 }
 
 let MarkdownTransformers = [
@@ -56,7 +56,7 @@ function regenReleasesList() {
 
         let assetLinkContainer = clon.querySelector("#AssetLinkContainer")
 
-        for (asset of item.assets.sort((a, b) => !a.name.includes("windows"))) {
+        for (asset of item.assets) {
             let newLinkWrap = document.createElement("p")
             let newLink = document.createElement("a")
             newLinkWrap.appendChild(newLink)
